@@ -1,5 +1,7 @@
 import { reptiles } from "./global/homeArray.js";
 import { Navbar } from "./component/navbar.js";
+import { Footer } from "./component/footer.js";
+
 import "./index.css";
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
         );
       })}
     </div>
+    <Footer />
    </>
   );
 }
