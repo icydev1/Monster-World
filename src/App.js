@@ -1,6 +1,6 @@
 import { reptiles } from "./global/homeArray.js";
-import { Navbar } from "./component/navbar.js";
-import { Footer } from "./component/footer.js";
+import { Navbar } from "./component/Header/navbar.js";
+import { Footer } from "./component/Footer/footer.js";
 
 import "./index.css";
 
