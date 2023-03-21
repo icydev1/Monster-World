@@ -14,6 +14,11 @@ export const reptiles = [
         "title":'Monster API',
         "desc":'Best Monster API in the World',
         "url":'/monster'
+        },
+        {
+        "title":'Jokes API',
+        "desc":'Best Jokes API in the World',
+        "url":'/jokes'
         }
 
 ]
