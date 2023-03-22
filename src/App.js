@@ -6,6 +6,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import { Weather } from "./pages/weather.js";
 import { Monster } from "./pages/monster.js";
 import { Jokes } from "./pages/jokes.js";
+import { Quotes } from "./pages/quotes.js";
 
 
 import "./index.css";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/weather" element={<Weather  />} />
         <Route path="/monster" element={<Monster  />} />
         <Route path="/jokes" element={<Jokes  />} />
+        <Route path="/quotes" element={<Quotes  />} />
       </Routes>
     </BrowserRouter>
     <Footer />
