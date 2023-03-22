@@ -7,6 +7,7 @@ import { Weather } from "./pages/weather.js";
 import { Monster } from "./pages/monster.js";
 import { Jokes } from "./pages/jokes.js";
 import { Quotes } from "./pages/quotes.js";
+import { Cars } from "./pages/cars.js";
 
 
 import "./index.css";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/monster" element={<Monster  />} />
         <Route path="/jokes" element={<Jokes  />} />
         <Route path="/quotes" element={<Quotes  />} />
+        <Route path="/cars" element={<Cars  />} />
       </Routes>
     </BrowserRouter>
     <Footer />

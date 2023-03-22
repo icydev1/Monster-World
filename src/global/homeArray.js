@@ -24,7 +24,13 @@ export const reptiles = [
         "title":'Quotes API',
         "desc":'Best Quotes API in the World',
         "url":'/quotes'
+        },
+        {
+         "title" : "cars",
+         "desc" : "Get Cars Information" ,
+         "url" : "/cars"      
         }
+
 
 ]
         
