@@ -16,8 +16,6 @@ export const Quotes = () => {
 
     const [result, setResult] = useState([]);
 
-
-
     const [input, setInput] = useState({
         quote: "",
     });
@@ -41,21 +39,18 @@ export const Quotes = () => {
             setResult(quotes.data);
             setDiv(true)
 
-            showToastMessage('success','API hit Sucessfully')
+            showToastMessage('success', 'API hit Sucessfully')
 
         } catch (error) {
             console.log(error);
-            showToastMessage('error','Something Went Wrong')
+            showToastMessage('error', 'Something Went Wrong')
         }
     }
 
-    
-   
-    
     return (
         <>
 
-        <ToastContainer />
+            <ToastContainer />
             <div className="max-w-4xl mx-auto px-4">
                 <div className="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -96,25 +91,25 @@ export const Quotes = () => {
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             Result Quotes :
                         </h5>
-                        
+
                         <div className="flex flex-wrap">
                             <div className="w-full md:w-1/2 font-bold tracking-tight text-gray-900 dark:text-white">
-                           Quote:
+                                Quote:
                             </div>
                             <div className="w-full md:w-1/2 font-bold tracking-tight text-gray-900 dark:text-white">
                                 {result[0].quote}
                             </div>
                             <div className="w-full md:w-1/2 font-bold tracking-tight text-gray-900 dark:text-white mt-1">
-                            Author:
+                                Author:
                             </div>
                             <div className="w-full md:w-1/2 font-bold tracking-tight text-gray-900 dark:text-white mt-1">
-                               {result[0].author}
+                                {result[0].author}
                             </div>
                             <div className="w-full md:w-1/2 font-bold tracking-tight text-gray-900 dark:text-white mt-1">
-                            Category:
+                                Category:
                             </div>
                             <div className="w-full md:w-1/2 font-bold tracking-tight text-gray-900 dark:text-white mt-1">
-                            {result[0].category}
+                                {result[0].category}
                             </div>
 
                         </div>
